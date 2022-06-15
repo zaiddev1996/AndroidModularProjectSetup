@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_activity_navigation"
+    app:startDestination="@id/app_navigation">
+
+    <include app:graph="@navigation/app_navigation" />
+    <include app:graph="@navigation/doctor_signup_navigation" />
+
+    <action
+        android:id="@+id/action_to_main"
+        app:destination="@id/app_navigation" />
+    
+    <action
+        android:id="@+id/action_to_doctor_signup"
+        app:destination="@id/doctor_signup_navigation" />
+
+</navigation>
